@@ -11,6 +11,7 @@ const publicRuntimeConfig = getPublicRuntimeConfig(allConfig)
 export default defineNuxtConfig({
   modules: [
     // 'nuxt-proxy-request',
+    'nuxt-multi-cache',
     '@pinia/nuxt',
     'nuxt-svg-icons',
     '@vant/nuxt',
@@ -19,12 +20,18 @@ export default defineNuxtConfig({
   devtools: {
     enabled: false,
   },
+  multiCache: {
+    debug: true,
+    route: {
+      enabled: true,
+    },
+  },
   css: ['~/assets/styles/index.scss'],
   appConfig: publicRuntimeConfig,
   srcDir: 'src/',
-  compatibilityDate: '2024-12-03',
 
   sourcemap: allConfig.NUXT_APP_ENV === 'development',
+  compatibilityDate: '2024-12-03',
 
   vite: {
     css: {
