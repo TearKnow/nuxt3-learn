@@ -1,7 +1,7 @@
 {
   "name": "nuxt3-app-starter",
   "version": "1.9.0",
-  "description": "A Nuxt(3) app starter!",
+  "description": "A Nuxt(3) app starter! nvm use 22.14.0",
   "author": {
     "name": "yisibell",
     "email": "yisiwings@163.com"
